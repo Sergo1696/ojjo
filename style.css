@@ -62,7 +62,7 @@
 
 #page-index header {
     height: 870px;
-    background: url('../img/bgc.jpg')center;
+    background: url('img/bgc.jpg')center;
     background-repeat: no-repeat;
     background-size: cover;
     display: block;
@@ -251,7 +251,7 @@ margin: 0;
 }
 #shops {
     height: 600px;
-    background: url('../img/background.jpg')center;
+    background: url('img/background.jpg')center;
     background-repeat: no-repeat;
     background-size: cover;
     display: block;
@@ -372,7 +372,7 @@ z-index: 1000;
    }
    #email {
     height: 600px;
-    background: url('../img/background.jpg')center;
+    background: url('img/background.jpg')center;
     background-repeat: no-repeat;
     background-size: cover;
     display: block;
