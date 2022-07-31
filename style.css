@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400;500;700&display=swap');
+* {
+   font-family: 'Noto Sans', sans-serif;
+   color: #fff;
+}
+
+#page-index {
+    margin: 0;
+    padding: 0;
+}
+#page-index menu.menu-top {
+    height: 60px;
+    width: 100%;
+    margin: 0;
+    padding-top: 25px;
+    padding: 0;
+    position: fixed;
+    z-index: 100;
+    top:0;
+    background-color: #333;
+}
+.menu-top .navbar {
+    justify-content:space-between;
+}
+.left-menu {
+    padding-left: 15px;
+}
+.left-menu ul, .right-menu ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+.left-menu ul li {
+    margin-right: 40px;
+}
+.left-menu ul li:last-child {
+    margin-right: 0;
+}
+.left-menu ul li a, .right-menu ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Gilroy';
+    line-height: 21px;
+    transition: all .3s;
+}
+.left-menu ul li a:hover, .right-menu ul li a:hover, .right-menu ul li a:hover i {
+    color:burlywood;
+}
+.right-menu {
+    padding-right: 15px;
+}
+.right-menu ul li {
+    margin-left: 40px;
+}
+.right-menu ul li:last-child {
+    margin-left: 23px;
+}
+.right-menu ul li:first-child {
+    margin-left: 0;
+}
+
+#page-index header {
+    height: 870px;
+    background: url('../img/bgc.jpg')center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+}
+#page-index header::before {
+    content: "";
+    background: linear-gradient(0deg, rgba(51, 51, 51, 0.87), rgba(51, 51, 51, 0.87));
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+header .text {
+    position: absolute;
+    top: 515px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 49px;
+    text-align: center;
+    margin: 0;
+}
+header .btn {
+    position: absolute;
+    top: 630px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.btn a {
+    background: #333;
+    padding: 15px 35px;
+    border: 1px solid #fff;
+    font-size: 15px;
+    font-weight: 200;
+    font-family: 'Gilroy';
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .5s;
+}
+.btn a:hover {
+background-color: burlywood;
+}
+header span {
+    position: absolute;
+    top: 745px;
+    width: 100%;
+    border: 1px solid #fff;
+}
+header .container:last-child {
+    position: absolute;
+    top: 805px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header-bottom ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.header-bottom ul li  {
+    border-right: 1px solid #fff;
+    padding: 0 15px;
+}
+.header-bottom ul li:first-child  {
+    padding-left: 0;
+}
+.header-bottom ul li:last-child  {
+    border-right: none;
+}
+
+#catalog, #blog, #social {
+    background-color: #fff;
+    padding: 60px 0;
+}
+#catalog h5, #blog h5, #social h5 {
+    font-family: 'Gilroy';
+    color: #333;
+    font-weight: 200;
+    font-size: 21px;
+    line-height: 29px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#catalog h3, #blog h3, #social h3 {
+    color: #333;
+font-weight: 700;
+font-size: 30px;
+line-height: 40px;
+text-align: center;
+margin-bottom: 60px;
+}
+#catalog .row:first-child {
+    margin: 0;
+    padding: 0;
+}
+.catalog-items {
+    padding:23px 0;
+}
+.catalog-items ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+}
+.catalog-items ul li {
+    margin-right: 24px;
+}
+.catalog-items ul li:last-child {
+    margin-right: 0;
+}
+.catalog-items ul li .active {
+    padding: 20px 35px;
+    background-color: #333;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Gilroy';
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.catalog-items ul li a {
+    position: relative;
+    padding: 20px 35px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 18px;
+    font-family: 'Gilroy';
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid #d6d6d6;
+    z-index: 1;
+}
+.catalog-items ul li a::after {
+    content: " ";
+    border: 1px solid #d6d6d6;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 0;
+}
+.catalog-items ul li a:hover {
+    background-color: #333;
+    color: #fff;
+}
+.catalog-items ul li .active::after {
+    content: none;
+} 
+.img-item {
+    padding: 0 15px;
+    width: 240px;
+    position: relative;
+    margin-top: 60px;
+}
+.img-item img {
+    width: 100%;
+    vertical-align: middle;
+    border-style: none;
+}
+.img-item h4 {
+    font-family: 'Gilroy';
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    bottom: 30px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+text-transform: uppercase;
+margin: 0;
+}
+#shops {
+    height: 600px;
+    background: url('../img/background.jpg')center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    padding: 100px 0;
+}
+.text h5, #email h5 {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 140%;
+    text-align: center;
+    margin-bottom: 15px; 
+}
+.text h3, #email h3 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+    margin-bottom: 45px;
+}
+.text p {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;    
+    text-align: center;
+    margin-bottom: 60px;
+}
+.btn-shops {
+display: flex
+}
+.btn-shops a {
+    margin: 0 auto;
+background-color: #fff;
+font-family: 'Gilroy';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+text-decoration: none;
+color: #333333;
+padding: 15px 30px;
+transition: all .3s;
+}
+.btn-shops a:hover {
+    background-color: burlywood;;
+}
+.img-blog {
+    padding: 0 15px;
+    width: 240px;
+    position: relative;
+}
+.img-blog img {
+    width: 100%;
+}
+.img-blog p {
+position: absolute;
+bottom: 35px;
+left: 72px;
+width: 206px;
+height: 87px;
+font-family: 'Gilroy';
+font-style: normal;
+font-weight: 400;
+font-size: 21px;
+line-height: 140%;
+text-align: center;
+color: #FFFFFF;
+}
+.btn-blog {
+    display: flex;
+    margin-top: 60px;
+    }
+    .btn-blog a {
+        margin: 0 auto;
+    background-color: #333;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 30px;
+    transition: all .3s;
+    }
+    .btn-blog a:hover {
+        background-color: transparent;
+        color: #333;
+        border: 1px solid #333;
+    }
+    #social .row {
+        padding: 0 15px;
+    }
+    #social .img-social {
+        padding: 0;
+        position: relative;
+        margin-top: 0;
+    }
+    .img-social img {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+   .img-social a i  {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    bottom: 100px;
+    font-size: 50px;
+z-index: 1000;
+   }
+   #email {
+    height: 600px;
+    background: url('../img/background.jpg')center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    padding: 100px 0;
+   }
+   #email .bottom-block {
+    justify-content: space-around;
+   }
+   .bottom-block h6 {
+    font-family: 'Gilroy';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 140%;
+margin-bottom: 0;
+margin-top: 25px;
+
+   }
+   .bottom-block h6:first-child {
+    margin-top: 50px;
+   }
+   #email .form {
+    border: 1px solid #fff;
+    margin-top: 55px;
+   }
+   .block-form {
+    margin:15px;
+    background-color: #fff;
+   }
+   .block-form input {
+    margin: 15px;
+    padding: 15px 0;
+    border: 1px solid #333;
+   }
+   .block-form button {
+    margin: 15px;
+    margin-left: 0;
+    background-color: #333;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 30px;
+    transition: all .3s;
+    cursor: pointer;
+   }
+   .block-form button:hover {
+    background-color: transparent;
+        color: #333;
+        border: 1px solid #333;
+   }
+   footer .col h5,footer .col h6, footer .col p {
+    color: #333;
+   }
+   footer .col h5 {
+    font-family: 'Gilroy';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 140%;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+padding-bottom: 15px;
+border-bottom: 1px solid #333;
+   }
+   footer .col h6 {
+    font-family: 'Gilroy';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+cursor: pointer;
+   }
+   footer .col h6 i {
+    color: #333;
+   }
+   footer .col p {
+    font-family: 'Gilroy';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+   }
+   .link-social i {
+    color: #333;
+    cursor: pointer;
+    margin-left: 15px;
+   }
+   .footer-bottom {
+    padding: 20px 0;
+    border-top: 1px solid #333;
+    justify-content: space-around;
+   }
+   .footer-bottom h5 {
+    font-family: 'Gilroy';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+color: #333;
+   }
